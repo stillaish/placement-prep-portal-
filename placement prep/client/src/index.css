@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* Global Button Styles */
+button {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn-primary {
+  background-color: #0051ae;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #004493;
+}
+
+.btn-outline {
+  border: 1px solid #d2dbe7;
+  background-color: #ffffff;
+  color: #141c25;
+}
+
+.btn-outline:hover {
+  background-color: #f7f9ff;
+  border-color: #0051ae;
+}
+
+/* Heatmap specific styles from design */
+.activity-cell { width: 10px; height: 10px; border-radius: 2px; }
+.cell-0 { background-color: #ebedf0; }
+.cell-1 { background-color: #9be9a8; }
+.cell-2 { background-color: #40c463; }
+.cell-3 { background-color: #30a14e; }
+.cell-4 { background-color: #216e39; }
